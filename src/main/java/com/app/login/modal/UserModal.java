@@ -18,4 +18,29 @@ public class UserModal {
     private String email;
     @NotEmpty
     private String password;
+
+    public long getId() {
+        return id;
+    }
+
+    public @NotEmpty String getName() {
+        return name;
+    }
+    public void setName(@NotEmpty String name) {
+        this.name = name;
+    }
+
+    public @NotEmpty String getEmail() {
+        return email;
+    }
+    public void setEmail(@NotEmpty String email) {
+        this.email = email;
+    }
+
+    public @NotEmpty String getPassword() {
+        return password;
+    }
+    public void setPassword(@NotEmpty String password) {
+        this.password = password;
+    }
 }
